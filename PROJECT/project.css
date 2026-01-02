@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+    min-height: 100vh;
+    background: #f5f7fb;
+}
+
+/* Main container */
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* Title */
+.container h1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 32px;
+    color: #2d2d2d;
+    margin-bottom: 25px;
+}
+
+.container h1 img {
+    width: 50px;
+}
+
+/* Button */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 26px;
+    border-radius: 12px;
+    border: none;
+    background: #102e75; /* soft indigo */
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn:hover {
+    background: #285cd6;
+    transform: translateY(-2px);
+}
+
+.btn img {
+    width: 20px;
+}
+
+/* Notes area */
+.notes-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Note card */
+.input-box {
+    background: white;
+    border-radius: 14px;
+    padding: 18px 20px 40px;
+    min-height: 120px;
+    color: #333;
+    line-height: 1.6;
+    position: relative;
+    outline: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.input-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+/* Delete icon */
+.input-box img {
+    width: 20px;
+    position: absolute;
+    bottom: 14px;
+    right: 16px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.input-box img:hover {
+    opacity: 1;
+}
